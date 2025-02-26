@@ -1,0 +1,14 @@
+* {
+    color: white;
+}
+
+body{
+    margin:0px;
+}
+
+.header {
+    background: linear-gradient(119.03deg, #DB2929 3.99%, #602614 79.64%);
+    display: grid;
+    grid-template-columns: 1fr;
+
+
