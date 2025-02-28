@@ -9,6 +9,8 @@
     display : flex;
     flex-direction : column;
     align-items: center;
-    
-    box-shaddow : 0px, 5px, 
+    justify-content: center;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 5px black;
 }

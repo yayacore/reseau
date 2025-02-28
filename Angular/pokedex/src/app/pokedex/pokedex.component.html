@@ -1,4 +1,7 @@
-<p>pokedex works!</p>
+<h1>Hello {{prenom}} ✨</h1>
+
+<p>J'ai cliqué {{clics}} fois</p>
+
 
 <button (click) = "onclick()" >clique ici</button>
 
@@ -7,7 +10,7 @@
   @for(pokemon of pokemons; track pokemon){
     <div class = "pokemon-card">
       <p class ="pokemon-name">{{pokemon.name}}</p>
-      <img src="{{pokemon.sprite}}" alt="">
+      <img src="{{pokemon.sprite}}" alt="https://pokebuildapi.fr/api/v1/pokemon/limit/100">
     </div>
   }
 }

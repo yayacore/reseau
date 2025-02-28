@@ -1,15 +1,14 @@
-
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Pokemon } from 'src/app/pokedex/types/pokemon.ts';
+import { Pokemon } from './types/pokemon';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './pokedex.component.html',
   styleUrl: './pokedex.component.css'
 })
-export class PokedekComponent {
+export class PokedexComponent {
   prenom = "Yaya";
   clics = 25;
   pokemons : Pokemon[] = [];
