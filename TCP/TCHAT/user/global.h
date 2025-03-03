@@ -23,6 +23,7 @@ int identifiants_clients[MAX_USERS];
 #define BUF_SIZE 500
 
 typedef struct delivery {
+    char prenom [255];
     int id_user;
     char message[255];
     int salon;

@@ -1,9 +1,13 @@
 #include "global.h"
 
-int main() 
+int main(int argc, char** argv) 
 {
 
     user_fd = initSocket();
+
+    t_delivery user;
+    char prenom [255]; strcpy(prenom, argv[1]);
+    strcpy(user.prenom, prenom);
 
     printf("\n###################### TCHAT ###################\n");
     printf("- create salon : créer un salon de discussion publique\n");
@@ -14,16 +18,9 @@ int main()
     printf("- join world\n");
     printf("- exit : Se déconnecter ou revenir en arrière\n");
     printf("################################################\n\n");
-
-    // char name[255]; memset(name, 0, 255);    commande connect à coder avec strtok
-    // printf("Qui est connecté ?\n");
-    // fgets(name, 255, stdin);
-    // printf("./tchat connect %s\n", name);
     
-    printf("début thread SEND\n");
+    printf("Bienvenue %s\n", user.prenom);
     pthread_t send_thread;
-    pthread_create(&send_thread, NULL, send_routine, &serv_fd);
-    printf("AP thread SEND\n");
 
     
 

@@ -28,6 +28,7 @@ int initSocket()
     return(user_fd);
 }
 
+
 void * send_routine(void *arg)
 {
    t_delivery user;
@@ -37,6 +38,7 @@ void * send_routine(void *arg)
         printf("send_routine\n");
         fgets(buf,sizeof(buf),stdin);
         strcpy(user.message, buf);
+        
         int error = send(user_fd, &user, sizeof(t_delivery), 0); perror("send");
         if (error == -1) printf("erreur\n"); 
     }
