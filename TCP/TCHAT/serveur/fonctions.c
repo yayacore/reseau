@@ -38,16 +38,16 @@ void * recv_routine(void *arg)
 {
     printf("recv_routine\n");
     
-    int* fd = (int*) arg;   // transtypage void* arg en int
+    int fd = *(int*) arg;   // transtypage void* arg en int
 
     t_delivery user;
     char buf[255]; memset(buf, 0, 255);
-    user.message = *buf;
+    strcpy(user.message, buf);
     
     while(1) 
     {
         
-        int nb_data_recved = recv(*fd, &user, sizeof(t_delivery), 0); perror("rcv"); // *fd pour accéder à la valeur pointée
+        int nb_data_recved = recv(fd, &user, sizeof(t_delivery), 0); perror("rcv"); // *fd pour accéder à la valeur pointée
         
         if(nb_data_recved == -1)
         {

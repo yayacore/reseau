@@ -36,7 +36,7 @@ void * send_routine(void *arg)
         char buf[255];memset(buf, 0, 255);
         printf("send_routine\n");
         fgets(buf,sizeof(buf),stdin);
-        user.message = *buf;
+        strcpy(user.message, buf);
         int error = send(user_fd, &user, sizeof(t_delivery), 0); perror("send");
         if (error == -1) printf("erreur\n"); 
     }
