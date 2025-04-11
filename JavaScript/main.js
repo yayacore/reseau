@@ -1,1 +1,0 @@
-const balise = document.querySelector(cssSelector);

@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.compteurWeb button {
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+
+}

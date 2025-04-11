@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.cookie {
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    
+}
