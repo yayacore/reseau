@@ -1,15 +1,75 @@
 * {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comble {
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .footer {
-    font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    display: grid;
 }
 
-.cookie {
+.cookies {
     display: flex;
-    position: absolute;
-    align-items: flex-end;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    border: solid 2px;
+    background-color: rgb(148, 46, 148);
+    left: 0%;
+    right: 0%;
+    padding-top: 20px;
 }
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.disappear {
+    opacity: 0;
+    transition: 2s;
+}
+
+.boutons {
+    display: flex;
+    width: 332px;
+    border: none;
+    border-radius: 26px;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    text-align: center;
+    height: 48px;
+}
+
+.fade-out {
+    animation-name: fade-out;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: scale(3);
+    }
+  
+    to {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+
+/* !!! pr générer des images aléatoires */
+/* https://source.unsplash.com/random/800x600 */
