@@ -11,3 +11,4 @@ function StartClic (){      //pas de param laisser vide
     compteur ++;
     compteurClic.innerText = compteur;      // on change la valeur de "variable" ds HTML
 }
+

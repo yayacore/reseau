@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    border: none;
+    gap: 10px;
+}
+
+.videoplayer {
+    padding-top: 4%;
+}
+
+.video {
+    height: 80vh;
+    width: 100%;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.animationLike {
+    color: blue;
+}
+
+.subscribeButton {
+    background-color: red;
+}
+
+/* button.subscribe {
+    background-color: gold;
+} */
