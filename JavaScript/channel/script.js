@@ -13,5 +13,4 @@ function applyEffectB() {
 function applyEffectA() {
     abonnement.classList.add("subscribeButton");
     abonnement.innerText="Abonné";
-    
 }

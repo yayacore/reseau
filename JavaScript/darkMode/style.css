@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding-left: 2%;
+}
+
+h1 {
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+.bouton {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 57px;
+    width: 300px;
+    border: solid 1px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.bouton::before {
+    height: 56px;
+    width: 22%;
+    position: absolute;
+    content: 'light';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    background-color: rgb(177, 177, 214);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0.9);
+}
+
+.dark {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 57px;
+    width: 300px;
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+.dark::before {
+    height: 56px;
+    width: 22%;
+    position: absolute;
+    content: 'dark';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+}
