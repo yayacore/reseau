@@ -1,12 +1,22 @@
-const blocs = document.querySelector("section");
+console.log("Modal Scroll");
 
-const popUp = document.querySelector(".end button");
+const modal = document.querySelector(".modal");
+const section = document.getElementById("end");
+const croix = document.getElementById("croix");
 
-blocs.addEventListener("scroll", fonction); 
+window.addEventListener("scroll", scrolling);
+croix.addEventListener("click", clicking);
 
-blocs.offsetTop;
-blocs.documentElement.scrollTop;
+function scrolling () {
 
-function scrollLimit() {
-    popUp.classList.add("popUp");
+    const navWindow = document.documentElement.scrollTop;
+    const topSection = end.offsetTop;
+    
+    if ( navWindow + window.innerHeight >= topSection) {
+        modal.style.display = 'flex';
+    }
+}
+
+function clicking () {
+    modal.style.display = 'none';
 }

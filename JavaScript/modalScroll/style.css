@@ -8,38 +8,35 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.top {
-    height: 80vh;
-    border: solid 4px goldenrod;
+.section {
+    height: 100vh;
+    border: dotted 4px mediumaquamarine;
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
-.middle {
-    height: 80vh;
-    border: solid 4px mediumaquamarine;
-    display: flex;
+.modal {
+    display: none;
+    flex-direction: row;
+    margin-top: 50%;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    position: fixed;
+    width: 40%;
+    height: 25vh;
+    border: solid;
+    background: rgba(253, 253, 253, 0.6);
+    z-index: 10;
 }
 
-.end {
-    height: 80vh;
-    border: solid 4px purple;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.end button {
-    visibility: hidden;
-}
-
-.popUp {
-    
-    visibility: visible;
-    
+.modal i {
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
