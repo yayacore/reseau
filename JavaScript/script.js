@@ -1,19 +1,23 @@
-const bouton = document.getElementById("bouton");
+// @ts-ignore
 const popUp = document.querySelector(".popUp");
 
-bouton.addEventListener("click", save);
+if (popUp == null) throw Error(".popUp class n'existe pas dans le html");
+const saveBtn = document.querySelector(".save_btn");
+
+saveBtn.addEventListener("click", save);
 
 function save() {
+
     console.log("début");
-    popUp.classList.remove("displayNone");
+
+    const toastinette = document.createElement('div');
+    toastinette.classList.add('toast');
+    toastinette.innerText = "fichier enregistré";
+    popUp.appendChild(toastinette);
+
+    setTimeout(disapear, 3000);
+    function disapear() {
+        toastinette.remove();
+    }
+    toastinette.addEventListener("click", disapear);
 }
-
-setTimeout(disapear, 3000);
-
-function disapear() {
-    popUp.classList.add("fadeOut");
-}
-
-popUp.addEventListener("click", disapear);
-
-// pour que le télécharchement se fasse en boucle mettre un foreach
