@@ -10,10 +10,18 @@
 
 <body>
     <form action="">
-        <input type="" name="nom" placeholder="Nom"> 
-        <input type="" name="prenom" placeholder="Prénom">
-        <input type="" name="mail" placeholder="Email">
-        <input type="" name="message" placeholder="Message">
+        <input type="text" name="nom" placeholder="Nom"> 
+        <p class="erreur" id="nomErreur"></p>
+
+        <input type="text" name="prenom" placeholder="Prénom">
+        <p class="erreur" id="prenomErreur"></p>
+
+        <input type="text" name="email" placeholder="Email">
+        <p class="erreur" id="emailErreur"></p>
+
+        <input type="text" name="message" placeholder="Message">
+        <p class="erreur" id="messageErreur"></p>
+
         <button type="submit">ENVOYER</button>
     </form>
 

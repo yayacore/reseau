@@ -10,3 +10,10 @@ form {
     padding: 30%;
     gap: 10px;
 }
+
+.erreur {
+    display: flex;
+    color: red;
+    border: solid 1px red;
+}
+
